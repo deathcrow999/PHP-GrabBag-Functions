@@ -14,3 +14,4 @@ read("index.php");
 
 OUTPUT
 *index code*
+***
