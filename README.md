@@ -2,6 +2,9 @@
 Functions every developer needs to make thier lives easier
 
 ##Read
+```php
+read($filename);
+```
 ####Description:
 This function takes the file reads its contents and displays them on the screen
 
@@ -20,6 +23,9 @@ OUTPUT
 ***
 
 ##Write
+```php
+write($filename,$mode,$contents);
+```
 ####Description:
 This function takes a file enters one of two modes (write or append) that you choose and then writes the contents specified to the file
 ####Parameters:
