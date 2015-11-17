@@ -1,3 +1,10 @@
+<script async src="paypal-button.min.js?merchant=deathcrow4561@gmail.com"
+    data-button="donate"
+    data-type="form"
+    data-name="My donation"
+    data-amount="1.00"
+></script>
+
 # PHP-GrabBag-Functions
 Functions every developer needs to make thier lives easier
 ####NOTE:Never use a variable placeholder the same as a functions parameter
