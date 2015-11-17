@@ -1,13 +1,13 @@
+# PHP-GrabBag-Functions
+Functions every developer needs to make thier lives easier
+####NOTE:Never use a variable placeholder the same as a functions parameter
+
 <script async src="paypal-button.min.js?merchant=deathcrow4561@gmail.com"
     data-button="donate"
     data-type="form"
     data-name="My donation"
     data-amount="1.00"
 ></script>
-
-# PHP-GrabBag-Functions
-Functions every developer needs to make thier lives easier
-####NOTE:Never use a variable placeholder the same as a functions parameter
 
 ##Read
 ```php
@@ -99,5 +99,78 @@ OUTPUT
 ```php
 alert
 alert
+```
+***
+##Alert Rand
+```php
+alert_rand($delay,$msgArray,$repeats);
+```
+
+####Description:
+Gets a random alert msg from an array of alert msgs(you must create the array of msgs) then displays the alert once the timer reaches 0 and shows the alert however many times it is specified in the repeats. Then function then resets the timer
+####Parameters:
+Delay: This is the time between alerts qnd must be numeric default value for this oarameter is 0 and will constantly display alerts
+
+msgArray:This is the array you create containing all your alert messages this value must be an array and is optional
+
+Repeats: This is the amount if time to repeat the alerts default value is 0 this parameter is optional but for performance it is recommended to set repeats to 1
+***
+Example1:
+```php
+$content = array("1","2","3");
+alert_rand(1,$content,2);
+```
+OUTPUT
+```php
+1
+1
+3
+3
+1
+1
+2
+2
+2
+2
+3
+3
+```
+Example2:
+```php
+$content = array("1","2","3");
+alert_rand(1,$content,1);
+```
+OUTPUT
+```php
+1
+3
+1
+2
+2
+3
+```
+Example3:
+```php
+$content = array("1","2","3");
+alert_rand(2,$content,1);
+```
+OUTPUT
+```php
+1
+
+
+3
+
+
+1
+
+
+2
+
+
+2
+
+
+3
 ```
 ***
