@@ -24,4 +24,24 @@ function repeat_alert($repeats,$msg){
   }
  }
 }
+
+function alert_rand($delay,$msgArray,$repeats){
+ $currentMsg = array_rand($msgArray);
+ $d = $delay;
+ while($d > 0){
+  $d = $delay - 1;
+  $repeat = $repeats;
+ }
+ while($d == 0){
+  while($repeat > 0){
+   $repeat = $repeat - 1;
+   echo "<script>alert('$currentMsg')</script>";
+   
+  }
+  while($repeat == 0){
+   $repeat = $repeats;
+   $d == $delay;
+  }
+ }
+}
 ?>
