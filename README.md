@@ -1,5 +1,6 @@
 # PHP-GrabBag-Functions
 Functions every developer needs to make thier lives easier
+####NOTE:Never use a variable placeholder the same as a functions parameter
 
 ##Read
 ```php
@@ -49,3 +50,24 @@ OUTPUT
 ```php
 Some random content
 ```
+***
+
+##Alert
+```php
+alert($msg);
+```
+####Description:
+This function displays and alert msg to the screen based on whats passed to the msg parameter
+####Parameters
+Msg:This is what you want the alert to say.This parameter is optional if left blank the alert will show up with nothing in it
+***
+Example:
+```php
+$message = "This is an alert msg";
+alert($message);
+```
+OUTPUT
+```php
+This is an alert msg
+```
+***
