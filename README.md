@@ -71,3 +71,26 @@ OUTPUT
 This is an alert msg
 ```
 ***
+
+##Repeat Alert
+```php
+repeat_alert($repeats,$msg);
+```
+####Description:
+Repeats an alert msg for the specified amount of times
+####Parameters:
+Repeats: Amount of times the alert is to be displayed non-optional
+
+Msg: Msg to be displayed in the alert optional of left blank alert will display blank
+***
+Example:
+```php
+$message = "alert";
+repeat_alert(2,$message);
+```
+OUTPUT
+```php
+alert
+alert
+```
+***
